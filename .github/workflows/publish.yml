@@ -3,7 +3,7 @@ name: "wgl sdk publish"
 on:
     push:
         branches:
-            - master
+            - main
 
 jobs:
     release:
