@@ -1,7 +1,7 @@
 {
-  "name": "leiawebglsdk",
+  "name": "cyrusleiawebglsdktest",
   "version": "1.0.8",
-  "description": "leia webgl sdk",
+  "description": "cyrus leia webgl sdk test",
   "main": "index.js",
   "dependencies": {
     "node-fetch": "^2.6.1",
@@ -11,6 +11,6 @@
   "scripts": {
     "test": "node tests/test.js"
   },
-  "author": "leia",
+  "author": "cyrus not leia",
   "license": "ISC"
 }
