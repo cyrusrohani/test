@@ -1,22 +1,23 @@
-name: "🚀 publish"
+name: "wgl sdk publish"
 
 on:
-    release:
-        types: [published]
+    push:
+        branches:
+            - master
 
 jobs:
     release:
-        name: 🚀 publish
+        name: wgl sdk publish
         runs-on: ubuntu-latest
         steps:
-            - name: 📚 checkout
+            - name: wgl sdk checkout
               uses: actions/checkout@v2.3.5
-            - name: 🟢 node
+            - name: wgl sdk setup node
               uses: actions/setup-node@v2.4.1
               with:
                   node-version: 12
                   registry-url: https://registry.npmjs.org
-            - name: 🚀 publish
+            - name: wgl sdk publish
               run: npm publish
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
