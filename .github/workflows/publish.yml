@@ -23,7 +23,8 @@ jobs:
               env:
                   GITHUB_TOKEN: "${{secrets.GITHUB_TOKEN}}"
               with:
-                  tag_message: "Custom message goes here."
+                  # tag_message: "Custom message goes here."
+                  changelog_structure: "**{{messageHeadline}}** {{author}}\n"
             - name: WebGL SDK Setup Nodejs
               uses: actions/setup-node@v2.4.1
               with:
