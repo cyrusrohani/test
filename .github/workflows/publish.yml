@@ -12,11 +12,12 @@ jobs:
         steps:
             - name: wgl sdk checkout
               uses: actions/checkout@v2.3.5
+            - name: wgl sdk config user
+              run: git config --global user.name "Your Name"
+            - name: wgl sdk config email
+              run: git config --global user.email "you@example.com"
             - name: wgl sdk increment version
-              steps:
-                 run: git config --global user.email "you@example.com"
-                 run: git config --global user.name "Your Name"
-                 run: npm version patch
+              run: npm version patch
             - name: wgl sdk version commit
               run: git push
             - name: wgl sdk setup node
