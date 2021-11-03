@@ -20,7 +20,7 @@ jobs:
               run: git push
             - name: WebGL SDK Create Tag
               uses: Klemensas/action-autotag@stable
-              with:
+              env:
                   GITHUB_TOKEN: "${{secrets.GITHUB_TOKEN}}"
             - name: WebGL SDK Setup Nodejs
               uses: actions/setup-node@v2.4.1
