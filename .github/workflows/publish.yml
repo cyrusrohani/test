@@ -13,9 +13,7 @@ jobs:
             - name: wgl sdk checkout
               uses: actions/checkout@v2.3.5
             - name: wgl sdk config user
-              run: git config --global user.name "Leia WGL SDK Publisher"
-            - name: wgl sdk config email
-              run: git config --global user.email "wglsdk@leiainc.com"
+              run: git config --global user.name "Leia WebGL SDK"
             - name: wgl sdk increment version
               run: npm version patch
             - name: wgl sdk version commit
