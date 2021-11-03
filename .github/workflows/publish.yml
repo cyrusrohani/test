@@ -18,6 +18,10 @@ jobs:
               run: npm version patch
             - name: WebGL SDK Commit Version
               run: git push
+            - name: WebGL SDK Create Tag
+              uses: Klemensas/action-autotag@stable
+              with:
+                  GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"        
             - name: WebGL SDK Setup Nodejs
               uses: actions/setup-node@v2.4.1
               with:
