@@ -12,6 +12,10 @@ jobs:
         steps:
             - name: wgl sdk checkout
               uses: actions/checkout@v2.3.5
+            - name: wgl sdk increment version
+              run: npm version minor
+            - name: wgl sdk version commit
+              run: git push
             - name: wgl sdk setup node
               uses: actions/setup-node@v2.4.1
               with:
