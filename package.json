@@ -1,6 +1,6 @@
 {
   "name": "cyrusleiawebglsdktest",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "description": "cyrus leia webgl sdk test",
   "main": "index.js",
   "dependencies": {
